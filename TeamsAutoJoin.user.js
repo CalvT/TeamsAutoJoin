@@ -1,12 +1,13 @@
 // ==UserScript==
-// @name         TeamsAutoAnswer
-// @version      0.1
+// @name         TeamsAutoJoin
+// @description  AutoJoin meetings in Microsoft Teams Web once meeting link is activated, and once joined, configure settings automatically.
+// @version      0.2
 // @author       Calvin Tomkins
 // @match        https://teams.microsoft.com/_
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=microsoft.com
 // @grant        none
-// @downloadURL  https://raw.githubusercontent.com/CalvT/TeamsAutoAnswer/main/TeamsAutoAnswer.user.js
-// @updateURL    https://raw.githubusercontent.com/CalvT/TeamsAutoAnswer/main/TeamsAutoAnswer.user.js
+// @downloadURL  https://raw.githubusercontent.com/CalvT/TeamsAutoJoin/main/TeamsAutoJoin.user.js
+// @updateURL    https://raw.githubusercontent.com/CalvT/TeamsAutoJoin/main/TeamsAutoJoin.user.js
 // ==/UserScript==
 
 (function() {
