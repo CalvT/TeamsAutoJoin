@@ -24,18 +24,31 @@
         joina = joinb.length;
     }
 
+    function activateinputs() {
+        let videoa = document.getElementById('video-button').getAttribute('aria-label');
+        let mica = document.getElementById('microphone-button').getAttribute('aria-label');
+        if(videoa == 'Turn camera on') {
+            document.getElementById('video-button').click();
+        }
+        if(mica == 'Unmute') {
+            document.getElementById('microphone-button').click();
+        }
+    }
+
     async function setView() {
         await sleep(10000);
         document.getElementById("callingButtons-showMoreBtn").click();
         await sleep(2000);
         document.getElementById("grid-switch-layout-button").click();
+        await sleep(2000);
+        activateinputs();
     }
 
-    var repeater = setInterval(function () {
+    var joinloopcheck = setInterval(function () {
         if (joina < 1) {
             joincheck();
         } else {
-            clearInterval(repeater);
+            clearInterval(joinloopcheck);
             document.getElementsByClassName("join-btn")[0].click();;
             setView();
         }
