@@ -54,4 +54,11 @@
         }
     }, 1000);
 
+    var inputsloop = setInterval(function () {
+        let videob = document.getElementById('video-button').getAttribute('aria-label');
+        if(videob == 'Turn camera on') {
+            document.getElementById('video-button').click();
+        }
+    }, 60000);
+
 })();
